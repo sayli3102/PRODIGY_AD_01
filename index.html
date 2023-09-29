@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="title"><span>Login Form</span></div>
+                <form action="login.jsp" method="Get">
+                    <div class="row">
+                        <i></i>
+                        <input type="text" name="uname" value="Username" class="form-control">
+                        <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                    </div>
+                    <div class="row">
+                        <i1></i1>
+                        <input type="password" name="pwd" value="Password" class="form-control">
+                        <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                    </div>
+                    <div class="row button">
+                        <input type="submit" class="btn btn-primary" value="Login">
+                    </div>
+                    <h3 style="color:#ffd752;">Don't have an account? <a href="Signup.html" style="color:#ffd752;">Sign up now</a></h3>
+</form>
+            </div>
+        </div>
+    </body>
+</html>
